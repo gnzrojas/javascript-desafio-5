@@ -86,6 +86,14 @@ window.onload = () => {
 
     //Agregar evento al boton de agregar tareas
     const btnAgregar = document.getElementById('btn-agregar');
-    btnAgregar.addEventListener('click', agregarTarea)
+    btnAgregar.addEventListener('click', agregarTarea);
+
+    //Permitir ingresar tarea presionando tecla enter
+    const enterInput = document.getElementById('agregar-tarea')
+    enterInput.addEventListener('keypress', function(event){
+        if(event.key === 'Enter'){
+            agregarTarea()
+        }
+    })
 
 }
