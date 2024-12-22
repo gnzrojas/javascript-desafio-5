@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="todolist">
+        <h1>Todo List</h1>
+        <hr>
+        <article class="agregar">
+            <p>Nueva tarea</p>
+            <input type="text" placeholder="Ingrese una tarea" id="agregar-tarea">
+            <button id="btn-agregar">Agregar</button>
+        </article>
+
+        <article class="resumen">
+            <div class="conteo">
+                <p>Total: <span=id="total-tareas">0</span></p>
+                <p>Realizadas: <span id="tareas-realizadas">0</span></p>
+
+            </div>
+            <div class="estado">
+
+                <h3>Lista de Tareas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarea</th>
+                            <th>Estado</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id = 'lista-tareas'>
+                        
+                    </tbody>
+                </table>
+
+                </ul>
+            </div>
+
+        </article>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

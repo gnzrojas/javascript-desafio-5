@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0; 
+}
+
+.todolist {
+    padding: 1em;
+    border: 1px solid black;
+    width: 40%;
+    height: auto;
+    margin: 1em;
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    flex-direction: column;
+    text-align: left;
+    gap: 1em;
+    background-color: #e6e6e6;
+}
+
+.agregar > input{
+    width: 35em;
+    height: 2em;
+}
+
+.agregar > button {
+    padding: 0.5em;
+    background-color: #05dd05;
+    border-radius: 5px;
+    width: 7em;
+    border: 1px solid black;
+    cursor:pointer;
+}
+
+
+.resumen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.estado table {
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.estado th, .estado td {
+    text-align: left;
+    padding: 8px;
+}
+
+
