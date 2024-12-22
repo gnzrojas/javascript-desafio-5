@@ -35,6 +35,9 @@ function renderTareas(tareasLista, contenedorId) {
     }
 
     contenedor.innerHTML = contenidoHtml
+
+    //Actualizar el conteo de las tareas
+    actualizarConteo()
 }
 
 //Función para eliminar una tarea
@@ -78,6 +81,15 @@ function actualizarEstado(id) {
         renderTareas(tareas, 'lista-tareas')
     }
 
+}
+
+//Función para actualizar el conteo de tareas listas y realizadas
+function actualizarConteo(){
+    const conteoTareas = tareas.length;
+    const tareasCompletadas = tareas.filter(tarea => tarea.completado).length;
+
+    document.getElementById('total-tareas').innerText = conteoTareas;
+    document.getElementById('tareas-realizadas').innerText = tareasCompletadas;
 }
 
 window.onload = () => {
