@@ -49,6 +49,7 @@ function eliminarTarea(id) {
 }
 
 //Función para agregar tareas desde input
+let contadorId = 4
 function agregarTarea() {
     
     const tareaInput =document.getElementById('agregar-tarea');
@@ -56,13 +57,14 @@ function agregarTarea() {
     
     if (nombreTarea){
         const nuevaTarea = {
-            id: Date.now(),
+            id: contadorId++,
             nombre: nombreTarea,
             completado: false
         }
         tareas.push(nuevaTarea);
 
-        renderTareas(tareas, 'lista-tareas')
+        renderTareas(tareas, 'lista-tareas');
+        tareaInput.value = '';
     }
 }
     
